@@ -1,0 +1,28 @@
+{
+  "name": "Bootswatch selector control",
+  "authors": [
+    "Frank Witte <frank@franksworld.nl>"
+  ],
+  "description": "AngularJS directive for selecting a Bootswatch theme.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Bootswatch",
+    "Bootstrap",
+    "Themes",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.3"
+  }
+}
