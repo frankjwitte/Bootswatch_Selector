@@ -37,9 +37,11 @@
                             .success(function (data) {
                                 vm.themes = data.themes;
                                 var defaultTheme = localStorage.getItem("BootswatchTheme") || vm.defaultTheme || vm.themes[0].name;
-                                vm.selectedTheme = vm.themes.find(function (theme) {
-                                    return theme.name === defaultTheme;
-                                });
+                                for(var i=0;i<vm.themes.length;i++){
+                                    if(vm.themes[i].name === defaultTheme){
+                                        vm.selectedTheme = vm.themes[i];
+                                    }
+                                }
                                 vm.setTheme();
                             });
                     }
